@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prajwal's Portfolio</title>
+
+  <!-- ✅ Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif; /* 👈 Poppins font applied here */
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(170, 107, 228);
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .first {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+      flex-wrap: wrap;
+    }
+
+    .first>div {
+      width: 40%;
+    }
+
+    .ls {
+      font-size: 3rem;
+      margin: 70px 0;
+    }
+
+    .purple{
+      color: rgb(170, 107, 228);
+    }
+    #element{
+      color: rgb(170, 107, 228);
+    }
+
+    .rs img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(170, 107, 228, 0.3);
+    }
+
+    /* Resume Button */
+    .btn {
+      display: inline-block;
+      background-color: rgb(170, 107, 228);
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.2s;
+      font-size: 25px;
+    }
+
+    .btn:hover {
+      background-color: rgb(140, 80, 210);
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .first {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .first>div {
+        width: 80%;
+      }
+
+      .ls {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Prajwal's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="first">
+      <div class="ls">
+        Hi, it's me <span class="purple">Prajwal AS</span>
+        <div>and I am a passionate</div>
+        <div> <span id="element"></span></div>
+
+        <!-- ✅ Resume Download Button -->
+        <a href="C:\Users\prajw_8isee8l\Downloads\FirstName_LastName_Resume (2).pdf" class="btn" download>📄 Download Resume</a>
+      </div>
+
+      <div class="rs">
+        <!-- ✅ Use a relative image path -->
+        <img src="C:\Users\prajw_8isee8l\Pictures\hi.jpg.png" alt="Prajwal's photo">
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Graphic designer', 'Video editor','Web developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
